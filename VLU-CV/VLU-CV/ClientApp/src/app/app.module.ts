@@ -1,46 +1,48 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { RouterModule } from "@angular/router";
 
-import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { AppFooterComponent } from './app-footer/app-footer.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { ResumeComponent } from './resume/resume.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
-import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
-import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppComponent } from "./app.component";
+import { NavMenuComponent } from "./nav-menu/nav-menu.component";
+import { AppFooterComponent } from "./app-footer/app-footer.component";
+import { HomeComponent } from "./home/home.component";
+import { ResumeComponent } from "./resume/resume.component";
+
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { AboutComponent } from "./about/about.component";
+import { ResumeTemplateComponent } from './resume-template/resume-template.component';
+import { ResumeTemplateLCPComponent } from './resume-template-lcp/resume-template-lcp.component';
+import { ResumeTemplateHHMComponent } from './resume-template-hhm/resume-template-hhm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
     ResumeComponent,
-    FetchDataComponent, AppFooterComponent
+    AboutComponent,
+    AppFooterComponent,
+    ResumeTemplateComponent,
+    ResumeTemplateLCPComponent,
+    ResumeTemplateHHMComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    BrowserModule.withServerTransition({ appId: "ng-cli-universal" }),
     HttpClientModule,
     FormsModule,
-    ApiAuthorizationModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'resume', component: ResumeComponent},
-      { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
+      { path: "", component: HomeComponent, pathMatch: "full" },
+      { path: "about", component: AboutComponent },
+      { path: "resume", component: ResumeComponent },
+      { path: "resume-template", component:  ResumeTemplateComponent},
+      { path: "resume-template-lcp", component:  ResumeTemplateLCPComponent},
+      { path: "resume-template-hhm", component:  ResumeTemplateHHMComponent},
     ]),
-    NgbModule
+    NgbModule,
   ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
-  ],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

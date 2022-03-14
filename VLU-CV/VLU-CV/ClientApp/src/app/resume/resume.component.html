@@ -1,115 +1,315 @@
-<button class="fab__button" (click)="onClick($event)">
-    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#6D9DC9" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16" style="position: fixed; bottom:20px; right:30px">
-        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-      </svg>      
-</button>
-<img class="main_image" src="https://i.ytimg.com/vi/XD4zXB5snlc/maxresdefault.jpg" alt="Trường Đại Học Văn Lang">
-
-<div style="position: relative; height: 100px; background-color: rgba(255,255,255,0); width: 100%;">
-    <div class="red_square_x" style="top: 10px; right: -25px; transform: rotate(40deg);"></div>
-    <div class="red_square_x" style="width:110px; top: 25px; right: -25px; transform: rotate(40deg);"></div>
-</div>
-
-<div class="d-flex flex-row">
-    <div style="width: 50%; display: flex;justify-content: center; flex-direction: column;">
-        <div style="position: relative; padding: 10px; margin: auto; ">
-            <div class="red_square_x" style="top: 0px;left: 0px;"></div>
-            <div class="red_square_y" style="top: 0px;left: 0px;"></div>
-            <div class="red_square_x" style="bottom: 0px;right: 0px;"></div>
-            <div class="red_square_y" style="bottom: 0px;right: 0px;"></div>
-            <img class="resume_image"
-                src="https://tuyensinh.vanlanguni.edu.vn/wp-content/uploads/2021/06/vlu-tot-nghiep.jpg"
-                alt="Lễ tốt nghiệp trường đại học Văn Lang">
+<div style="height: 80px; width: 100%; position: relative; "></div>
+<h4>Danh sách các mẫu Resume dành cho sinh viên</h4><br>
+<div class="d-flex flex-row thumb">
+    <div class="background">
+        <div class="label">
+            New
+        </div>
+        <div class="cv">
+            <div class="header">
+                <div class="image">
+                    <img src="../../assets/Image/aodai.png" alt="">
+                </div>
+                <div class="profile">
+                    <p class="name">TRẦN HOÀNG PHƯƠNG</p>
+                    <p class="job">Nhân Viên Marketing</p>
+                    <div class="content">
+                        <p>Một con người theo chủ nghĩa hoàn hảo và đã có kinh nghiệm làm việc 9 tháng trong lĩnh vực
+                            Marketing. Điều đó giúp tôi củng cố thêm các kỹ năng liên quan đến quản lý cộng đồng, xây
+                            dựng các loại nội dung truyền thông để quảng bá sản phẩm của doanh nghiệp cũng như các
+                            chiến dịch quảng cáo nhằm mục đích nâng cao sự nhận diện thương hiệu của khách hàng. Tôi
+                            sẽ nỗ lực hết mình để trở thành Manager trong 4 năm tới </p>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="left">
+                    <div class="title__component">
+                        <p class="title">Thông tin liên hệ</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information">
+                        <div class="information">
+                            <div class="icon birthday"></div>
+                            <p>21/02/1999</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon mail"></div>
+                            <p>thphuong@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon phone"></div>
+                            <p>0917284712</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon facebook"></div>
+                            <p>https://fb.com/phuong</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon location"></div>
+                            <p>Đường số 2, TPHCM</p>
+                        </div>
+                    </div>
+                    <div class="title__component">
+                        <p class="title">Các kỹ năng</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information" style="height: 100px; width:60px ;">
+                        <strong>💥 Vận dụng phần mềm</strong>
+                        <p class="p__content" style="top:-18px; position:relative;margin-left: 8px;">- Sử dụng thành thạo các công cụ Microsoft Office như Word, Excel, Powerpoint, Visio</p>
+                        <p class="p__content" style="top:-18px; position:relative;margin-left: 8px;">- Có khả năng sử dụng các công cụ thiết kế như Adobe InDesign, Adobe Photoshop</p>
+                        <p class="p__content" style="top:-18px; position:relative;margin-left: 8px;">- Có thể sử dụng các công cụ chỉnh sửa video như Adobe Premiere, Adobe After Effect, Canva</p>
+                        <strong style="top:-32px">💥 Kỹ năng mềm</strong>
+                        <p class="p__content" style="top:-36px; position:relative;margin-left: 8px;">- Kỹ năng thuyết trình</p>
+                        <p class="p__content" style="top:-36px; position:relative;margin-left: 8px;">- Kỹ năng phân tích</p>
+                        <p class="p__content" style="top:-36px; position:relative;margin-left: 8px;">- Kỹ năng đàm phán</p>
+                        <p class="p__content" style="top:-36px; position:relative;margin-left: 8px;">- Kỹ năng quản lý thời gian</p>
+                    </div>
+                    <div class="title__component" style="top:3px">
+                        <p class="title">Thành tích</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information" style="top:7px; width: 65px;">
+                        <p class="p__content">- Giải ba cuộc thi Marketing Generator năm 2021</p>
+                        <p class="p__content">- Đạt học bổng 5 học kỳ liên tiếp tại Trường Đại Học Văn Lang</p>
+                        <p class="p__content">- IELTS: 6.5</p>
+                    </div>
+                    <div class="title__component" style="top:-5px">
+                        <p class="title">Sở thích</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information" style="top:-1px">
+                        <p class="p__content">- Đọc sách mỗi ngày</p>
+                        <p class="p__content">- Chơi thể thao</p>
+                        <p class="p__content">- Viết lách và vẽ thiết kế</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="title__component" style="top:5px; left: 0px;">
+                        <p class="title">Trình độ học vấn</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information">
+                        <strong style="left: -20px;">💥 Quản trị kinh doanh</strong><br>
+                        <strong style="left: -20px; top:-30px">Đại Học Văn Lang | 08/2016 - 06/2020</strong>
+                        <p class="p__content" style="left: -20px; top:-30px; position: relative;">Tốt nghiệp loại khá, GPA: 2.97/4.0</p>
+                    </div>
+                    <div class="title__component" style="top:-3px; left: 0px; width: 100px;">
+                        <p class="title">Kinh nghiệm làm việc</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information">
+                        <strong style="left: -20px; top: -22px;">💥 Digital Marketing Intern</strong><br>
+                        <strong style="left: -20px; top:-39px">Shopify | 03/2020 - 06/2020</strong>
+                        <p class="p__content" style="left: -20px; top:-40px; position: relative; width: 115px;">Chịu trách nhiệm quản lý traffic của các website thông qua việc quan sát các thông số thống kê từ ứng dụng Google Analytics</p>
+                        <p class="p__content" style="left: -20px; top:-40px; position: relative; width: 115px;">- Thiết kế các posters, các videos để quảng bá sản phẩm đến người tiêu dùng trên các nền tảng như facebook, tiktok, instagram, các forum trên mạng, ...</p>
+                        <p class="p__content" style="left: -20px; top:-40px; position: relative; width: 115px;">- Thiết lập marketing proposal để nâng cao chiến lược kinh doanh của công ty cũng như nâng cao mức độ nhận diện thương hiệu của các khách hàng tiềm năng đối với các sản phẩm đang kinh doanh của công ty.</p>
+                        <strong style="left: -20px; top: -51px;">💥 Designer</strong><br>
+                        <strong style="left: -20px; top:-69px">Freelance | 03/2020 - 06/2020</strong>
+                        <p class="p__content"  style="left: -20px; top:-70px; position: relative; width: 115px;">- Thiết kế posters, banners, book covers cho khách hàng trong nước và quốc tế.</p>
+                        <p class="p__content"  style="left: -20px; top:-70px; position: relative; width: 115px;">- Sử dụng các công cụ tạo ra prototypes như Adobe XD, Framer, Figma để thiết kế prototypes phục vụ cho việc trực quan hóa thị giác sản phẩm cho công ty Tiên An.</p>
+                    </div>
+                    <div class="title__component" style="top:75px; left: 0px; width: 100px;">
+                        <p class="title">Hoạt động</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information">
+                        <p class="p__content" style="left: -20px; top:70px; position: relative; width: 115px;">- Chiến dịch tình nguyện xuân mùa tết.</p>
+                        <p class="p__content" style="left: -20px; top:70px; position: relative; width: 115px;">- Sự kiện Tô Màu Giấc Mơ.</p>
+                        <p class="p__content" style="left: -20px; top:70px; position: relative; width: 115px;">- Sự kiện chạy việt dã.</p>
+                        <p class="p__content" style="left: -20px; top:70px; position: relative; width: 115px;">- Hiến máu tình nguyện.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="background" style="margin:0 80px;background: rgba(192, 179, 179, 0.6);">
+        <div class="label">
+            New
+        </div>
+        <div class="cv" style="border: none;">
+            <div class="body" style="height: 100%;">
+                <div class="left" style="width: 57%;">
+                    <strong class="strong__cv2" style="top:-3px;left:10px;">Mục tiêu nghề nghiệp</strong>
+                    <p class="p__content" style="left: 10px; width: 89%; top:-4px; position: relative;">Với 1 năm kinh nghiệm trong việc tham gia vào các dự án
+                        toàn cầu về thiết kế các posters, portraits và tranh phong
+                        cảnh. Tôi hoàn toàn tự tin mình phù hợp với công ty và có
+                        thể đáp ứng đầy đủ các yêu cầu cũng như công việc được
+                        giao. Tôi là một con người đầy trách nhiệm và sẽ cống hiến
+                        hết mình.</p>
+                    <strong class="strong__cv2" style="top:-14px;left:10px;">Học vấn</strong><br>
+                    <strong style="top:-31px;left:10px;">• Thiết kế đồ họa</strong>
+                    <p class="p__content" style="left: 10px; width: 89%; top:-33px; position: relative;">Đại Học Kiến Trúc | 09/2017 - 11/2021</p>
+                    <p class="p__content" style="left: 10px; width: 89%; top:-33px; position: relative;">Tốt nghiệp loại giỏi, GPA: 8.9/10</p>
+                    <strong class="strong__cv2" style="top:-45px;left:10px;">Kinh nghiệm làm việc</strong><br>
+                    <strong style="top:-62px;left:10px;">• Freelance | 06/2020 - Present</strong><br>
+                    <strong style="top:-80px;left:10px;">Graphic, Video Designer</strong>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-81px; position: relative;">- Nhận thiết kế các posters online trên yêu cầu hoặc brief có sẵn với deadlines phù hợp trong và ngoài nước.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-81px; position: relative;">- Nhận edit các videos hình ảnh, chân dung, phim ảnh hoặc MV ca nhạc.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-81px; position: relative;">- Nâng cao thêm khả năng chuyên môn bằng cách tự làm các projects cá nhân.</p>
+                    <strong style="top:-93px;left:10px;">• Lazada Vietnam | 01/2020 - 3/2020</strong><br>
+                    <strong style="top:-111px;left:10px;">Graphic Designer Intern</strong>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-113px; position: relative;">- Được đào tạo chuyên sâu về các phương pháp cũng như kỹ thuật thiết kế đối tượng chân dung với tranh phong cảnh.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-113px; position: relative;">- Được đào tạo bài bản về quy trình sản xuất và dựng video.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-113px; position: relative;">- Thiết kế các posters quảng cáo cho Lazada tạo điều kiện cho việc chạy quảng cáo online qua các nền tảng website,youtube, facebook, tiktok.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-113px; position: relative;">- Tham gia vào dự án tạo hình nhân vật mùa hè cho sự kiện thường niên.</p>
+                    <strong class="strong__cv2" style="top:-124px;left:10px;">Hoạt động</strong>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-125px; position: relative;">- Tham gia chiến dịch mùa hè xanh do Trường Đại Học Kiến Trúc tổ chức để thăm hỏi các người có công với cách mạng, những cô nhi viện và trồng cây trong khuôn viên trường.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-125px; position: relative;">- Hiến máu tình nguyện. </p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-125px; position: relative;">- Tham gia câu lạc bộ sáng tạo của Trường Đại Học Kiến Trúc.</p>
+                    <strong class="strong__cv2" style="top:-135px;left:10px;">Chứng chỉ</strong>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-136px; position: relative;">- Chứng chỉ hoàn thành khóa thực tập chuyên sâu về Graphic Design tại Lazada.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-136px; position: relative;">- Sinh viên Năm tốt trong hai học kỳ liên tiếp.</p>
+                    <p class="p__content" style="left: 10px; width: 85%; top:-136px; position: relative;">- TOEIC: 550</p>
+                    
+                    
+                </div>
+                <div class="right" style="width: 43.5%;background: rgba(117, 166, 37, 0.3); ">
+                    <div style="background:  rgba(0, 0, 0, 0.7); width:14px; height: 2px; position: relative; top:0px; left:85px;"></div>
+                    <div style="width: 65px; height: 65px; border-radius: 50%; margin: 8px auto;">
+                        <img src="../../assets/Image/cv2.png" alt="">
+                    </div>
+                    <strong class="strong__cv2" style="left: 19px; top:-7px; font-size: 8px; line-height: 11px; font-weight: 700;">CAO LINH CHÂU</strong>
+                    <p class="p__content" style="font-size: 5px; line-height: 7px; left:30px; top:-10px; position: relative;">Graphic Designer</p>
+                    <strong class="strong__cv2" style="left: 12px; top:-16px;">Thông tin</strong>
+                    <div class="simple__information" style="top:-20px;left:7px;">
+                        <div class="information">
+                            <div class="icon mail2"></div>
+                            <p style="margin-top:1px">linhchau17kh@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon phone2"></div>
+                            <p style="margin-top:1px">0928174627</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon birthday2"></div>
+                            <p style="margin-top:1px">21/02/1999</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon location2"></div>
+                            <p style="margin-top:1px">17 Phan Văn Trị, Gò Vấp, TPHCM</p>
+                        </div>
+                        <div class="information">
+                            <div class="icon facebook2"></div>
+                            <p style="margin-top:1px">https://fb.com/linhchau17kh</p>
+                        </div>
+                    </div>
+                    <strong class="strong__cv2" style="left: 12px; top:-36px;">Kỹ năng</strong><br>
+                    <strong style="top:-53px;left:10px;">• Kỹ năng cứng</strong>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-55px; position: relative;">- Sử dụng thuần thục bộ ứng dụng Microsoft Office: Word, Powerpoint, Excel, Visio, Onedrive </p>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-55px; position: relative;">- Sử dụng thành thạo các công cụ thiết kế, chỉnh sửa ảnh và dựng videos: Adobe Premiere, After Effects, Lightroom, InDesign, Illustrator, Photoshop, AutoCard</p>
+                    <p class="p__content" style="left: 10px; width: 74.04%; top:-55px; position: relative;">- Sử dụng thành thạo các công cụ thiết kế prototypes: Figma, Adobe XD, Framer</p>
+                    <strong style="top:-68px;left:10px;">• Kỹ năng cứng</strong>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-70px; position: relative;">- Kỹ năng giao tiếp</p>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-70px; position: relative;">- Kỹ năng quản lý thời gian</p>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-70px; position: relative;">- Kỹ năng làm việc đa nhiệm</p>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-70px; position: relative;">- Kỹ năng lãnh đạo</p>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-70px; position: relative;">- Kỹ năng phân tích thiết kế</p>
+                    <strong class="strong__cv2" style="left: 12px; top:-80px;">Sở thích</strong>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-82px; position: relative;">- Vẽ tranh chân dung</p>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-82px; position: relative;">- Sáng tác nhạc</p>
+                    <p class="p__content" style="left: 10px; width: 75%; top:-82px; position: relative;">- Viết thư pháp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background" style="background: rgba(192, 179, 179, 0.6);">
+        <div style="height: 25px; width: 100%; position: relative;">        </div>
+        <div class="cv" style="border: 0;">
+            <div style="height: 94px; width: 100%; position: relative; border:7px solid #ADAA5A; border-bottom: 0;">
+                <img src="../../assets/Image/imgcv3.png" alt="" style="position: absolute; left:8px; top:11px;">
+                <p style="position: absolute; width: 62px; height: 11px; left: 90px; top: 25px;
+                          font-style: normal; font-weight: bold; font-size: 8px; line-height: 11px;">
+                          TRỊNH NGUYỄN
+                </p>
+                <p style="position: absolute; width: 91px; height: 19px; left: 90px; top: 35px;   
+                          font-style: normal; font-weight: bold; font-size: 14px; line-height: 19px;  color: #ADAA5A;">
+                    THÙY TRANG
+                </p>
+                <p style="position: absolute; width: 67px; height: 10px; left: 90px; top: 56px; font-style: normal;
+                          font-weight: bold; font-size: 7px; line-height: 10px; color: rgba(0, 0, 0, 0.6);">
+                    BUSINESS ANALYST
+                </p>
+            </div>
+            <div class="body">
+                <div class="left" style="width: 87px; height: 203px; background: rgba(173, 170, 90, 0.35); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15); margin: 0 0 21px 7px;">
+                    <strong class="strong__cv2" style="top: 5px; left: 4px;">Thông tin</strong>
+                    <div class="simple__information" style="top:0px;left:-1px;">
+                        <div class="information" style="width: 100px; height: 5px;">
+                            <div class="icon mail2"></div>
+                            <p class="p__content" style="margin-top:1px">thuytrangabc@gmail.com</p>
+                        </div>
+                        <div class="information" style="width: 100px; height: 5px;">
+                            <div class="icon phone2"></div>
+                            <p class="p__content" style="margin-top:1px">0935002884</p>
+                        </div>
+                        <div class="information" style="width: 100px; height: 5px;">
+                            <div class="icon birthday2"></div>
+                            <p class="p__content" style="margin-top:1px">08/08/2001</p>
+                        </div>
+                        <div class="information" style="width: 100px; height: 5px;">
+                            <div class="icon location2"></div>
+                            <p class="p__content" style="margin-top:1px">20 Ung Văn Khiêm, Bình Thạnh, TPHCM</p>
+                        </div>
+                        <div class="information" style="width: 100px; height: 5px;">
+                            <div class="icon facebook2"></div>
+                            <p class="p__content" style="margin-top:1px">https://fb.com/thuychang21sg</p>
+                        </div>
+                    </div>
+                    <strong class="strong__cv2" style="top: -17px; left: 4px;">Kỹ năng</strong><br>
+                    <strong style="top:-35px;left:4px;">• Kỹ năng cứng</strong>
+                    <p class="p__content" style="left: 4px; width: 89%; top:-38px; position: relative;">- Sử dụng thuần thục bộ ứng dụng Microsoft Office: Word, Powerpoint, Excel, Visio, Onedrive</p>
+                    <p class="p__content" style="left: 4px; width: 87%; top:-38px; position: relative;">- Sử dụng thành thạo các công cụ thiết kế, chỉnh sửa ảnh và dựng videos: Adobe Premiere, After Effects, Lightroom, InDesign, Illustrator, Photoshop, AutoCard</p>
+                    <p class="p__content" style="left: 4px; width: 83%; top:-38px; position: relative;">- Sử dụng thành thạo các công cụ thiết kế prototypes: Figma, Adobe XD, Framer</p>
+                    <strong style="top:-52px;left:4px;">• Kỹ năng mềm</strong>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-55px; position: relative;">- Kỹ năng giao tiếp</p>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-55px; position: relative;">- Kỹ năng quản lý thời gian</p>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-55px; position: relative;">- Kỹ năng làm việc đa nhiệm</p>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-55px; position: relative;">- Kỹ năng lãnh đạo</p>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-55px; position: relative;">- Kỹ năng phân tích thiết kế</p>
+                    <strong class="strong__cv2" style="top: -66px; left: 4px;">Sở thích</strong>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-69px; position: relative;">- Ca hát</p>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-69px; position: relative;">- Công nghệ mới</p>
+                    <p class="p__content" style="left: 4px; width: 75%; top:-69px; position: relative;">- Làm thơ</p>
+                </div>
+                <div class="right">
+                    <div class="title__component" style="top:10px; left: 7px;">
+                        <p class="title">Trình độ học vấn</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information" style="height: 100px; width:100px; left: 5px; top:14px;">
+                        <strong>💥 Tài Chính Ngân Hàng</strong><br>
+                        <strong style="top:-30px;">Đại Học Văn Lang | 08/2016 - 06/2020</strong>
+                        <p class="p__content" style="top:-30px; position:relative; left: 3px;">Tốt nghiệp loại khá, GPA: 3.0/4.0</p>
+                    </div>
+                    <div class="title__component" style="top:-60px; left: 7px; width: 100px;">
+                        <p class="title">Kinh nghiệm làm việc</p>
+                        <div class="title__footer"></div>
+                    </div>
+                    <div class="simple__information" style="height: 100px; width:100px; left: 5px; top:-54px;">
+                        <strong>💥 Digital Marketing Intern</strong><br>
+                        <strong style="top:-31px;">Shopify | 03/2020 - 06/2020</strong>
+                        <p class="p__content" style="top:-32px; position:relative; left: 3px; width:113px;">- Chịu trách nhiệm quản lý traffic của các website thông qua việc quan sát các thông số thống kê từ ứng dụng Google Analytics.</p>
+                        <p class="p__content" style="top:-32px; position:relative; left: 3px; width: 113px;">- Thiết kế các posters, các videos để quảng bá sản phẩm đến người tiêu dùng trên các nền tảng như facebook, tiktok, instagram, các forum trên mạng, ...</p>
+                        <p class="p__content" style="top:-32px; position:relative; left: 3px; width: 113px;">- Thiết lập marketing proposal để nâng cao chiến lược kinh doanh của công ty cũng như nâng cao mức độ nhận diện thương hiệu của các khách hàng tiềm năng đối với các sản phẩm đang kinh doanh của công ty.</p>
+                        <strong style="top:-45px">💥 Designer</strong><br>
+                        <strong style="top:-62px;">Freelance | 03/2020 - 06/2020</strong>
+                        <p class="p__content" style="top:-64px; position:relative; left: 3px; width: 113px;">- Thiết kế posters, banners, book covers cho khách hàng trong nước và quốc tế.</p>
+                        <p class="p__content" style="top:-64px; position:relative; left: 3px; width: 113px;">- Sử dụng các công cụ tạo ra prototypes như Adobe XD, Framer, Figma để thiết kế prototypes phục vụ cho việc trực quan hóa thị giác sản phẩm cho công ty Tiên An. </p>
+                    </div>
+                    <div class="title__component" style="top:-47px; left: 7px; width: 100px;">
+                        <p class="title">Hoạt động</p>
+                        <div class="title__footer"></div>
+                    </div>                    
+                    <div class="simple__information" style="height: 100px; width:100px; left: 5px; top:14px;">
+                        <p class="p__content" style="top:-56px; position:relative; left: 3px;"> - Chiến dịch tình nguyện xuân mùa tết. </p>
+                        <p class="p__content" style="top:-56px; position:relative; left: 3px;">- Sự kiện Tô Màu Giấc Mơ.</p>
+                        <p class="p__content" style="top:-56px; position:relative; left: 3px;">- Sự kiện chạy việt dã.</p>
+                        <p class="p__content" style="top:-56px; position:relative; left: 3px;">- Hiến máu tình nguyện.</p>
+                    </div>
 
-    <div style="width: 50%; padding-right: 60px; padding-left: 10px;">
-        <h5 style="height: 25px; overflow: hidden;"><strong>
-                NƠI ƯƠM MẦM GIẤC MƠ - KIẾN TẠO NHÂN TÀI
-            </strong></h5>
-        <p>
-            Trường Đại Học Văn Lang là trường đại học đào tạo đa ngành nghề theo định hướng ứng dụng. Đại Học Văn Lang
-            hiện trực thuộc Tập đoàn giáo dục Văn Lang.
-        </p>
-        <h5 style="height: 25px; overflow: hidden;"><strong>
-                SỨ MỆNH
-            </strong></h5>
-        <p>
-            Chúng tôi đào tạo người học trở thành phiên bản tốt nhất của chính họ, với tinh thần học tập suốt đời, luôn
-            sống trọn vẹn với tất cả tiềm năng của bản thân. Chúng tôi nuôi dưỡng tài năng để giúp họ nắm lấy vai trò là
-            những nhà lãnh đạo tương lai trong lĩnh vực mà họ theo đuổi.
-        </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<br>
-<div class="d-flex flex-row">
-    <div style="width:80%">
-        <h4 style="height: 30px; overflow: hidden; margin-left: 40px;"><strong>
-                GIÁ TRỊ CỐT LÕI:
-            </strong> <em style="color:red">Đạo đức - Ý chí - Sáng tạo</em> </h4>
-        <h4 style="height: 30px; overflow: hidden; margin-left: 40px;"><strong>
-                TRIẾT LÝ GIÁO DỤC
-            </strong></h4>
-        <ul style="margin-left: 10px;">
-            <li><strong>• Phát triển toàn diện</strong></li>
-            <li><strong>• Học tập suốt đời</strong></li>
-            <li><strong>• Đạo Đức</strong></li>
-            <li><strong>• Ảnh hưởng tích cực</strong></li>
-        </ul>
-    </div>
-    <div>
-        <a href="">
-            <button class="more-button"><strong style="font-size: 24px;"> Xem Thêm</strong></button>
-        </a>
-    </div>
-</div>
-<br><br>
-<div style="position:relative; height: calc(100vw*0.64);">
-    <img class="main_image" src="../../assets/Image/pointing.jpg" alt="">
-    <img src="../../assets/Image/medal.png" alt="" class="medal_image">
-    <h2 style="height: 40px; overflow: hidden; position: absolute; top: 55%; left: 40%;"><strong>TẠI SAO NÊN CHỌN VĂN
-            LANG?</strong></h2>
-    <div class="rectangle_item" style="top:62%; left:40%">
-        <br>
-        <h4 style="overflow:visible; text-align: center;"><strong>Cơ sở <br>vật chất</strong></h4>
-    </div>
-    <div class="rectangle_item" style="top:64%; left:56%">
-        <br>
-        <h4 style="overflow:visible; text-align: center;"><strong>Giá trị <br> cốt lõi</strong></h4>
-    </div>
-    <div class="rectangle_item" style="top:66%; left:72%">
-        <br>
-        <h4 style="overflow:visible; text-align: center;"><strong>Tầm nhìn</strong></h4>
-        <h4 style="overflow:visible; text-align: center;"><strong>Mục tiêu chiến lược</strong></h4>
-    </div>
-</div>
-<div class="_center_" style="width:90%">
-    <br><h4 style="overflow: visible;"><strong>Cơ sở vật chất hiện đại</strong></h4><br>
-    <img class="_image_" src="../../assets/Image/Trinh Cong Son.jpg" alt=""><br>
-    <h5 style="overflow: visible;">Hội trường chính được đặt tên theo cố nhạc sĩ Trịnh Công Sơn, trang bị hệ thống âm
-        thanh, ánh sáng hiện đại với sức chứa lên đến 1600 người tham dự.</h5><br>
-    <img src="../../assets/Image/Ho Boi.jpg" alt="" class="_image_"><br>
-    <h5 style="overflow:visible;">Hồ bơi trường Đại học Văn Lang được xây dựng theo tiêu chuẩn Olympic, gồm 8 làn bơi.</h5><br>
-    <img src="../../assets/Image/AR, VR.jpg" alt="" class="_image_"><br>
-    <h5 style="overflow: visible;">Phòng thực tế ảo AR/ VR, sinh viên sẽ được tiếp cận 3 ứng dụng phân cấp khác nhau, bao gồm AR, VR và MR</h5><br>
-    <img src="../../assets/Image/Thu Vien.jpg" alt="" class="_image_"><br>
-    <h5 style="overflow: visible;">Thư viện Trường Đại học Văn Lang</h5><br>
-    <img src="../../assets/Image/Phong May Tinh.jpg" alt="" class="_image_"><br>
-    <h5 style="overflow: visible;">Phòng máy tính - Cơ sở chính Trường Đại học Văn Lang</h5><br>
-    <h4 style="overflow: visible;">TẦM NHÌN - MỤC TIÊU CHIẾN LƯỢC</h4><br>
-    <h5 style="overflow: visible; color: red;"><em>Tầm nhìn: trở thành một trong những trường Đại học trẻ được ngưỡng mộ nhất Châu Á vào 
-        năm 2030</em></h5><br>
-    <img src="../../assets/Image/Tam Nhin Chien Luoc.jpg" alt="" class="_image_"><br><br>
-    <h5 style="overflow: visible; color: red;"><em>Mục tiêu chiến lược của Trường Đại học Văn Lang giai đoạn 2020-2025 và tầm nhìn đến năm 2030</em></h5>
-    <h6 style="overflow: visible;">• Trở thành một trong những đại học trẻ được ngưỡng mộ nhất Châu Á, là nơi đào tạo những con người toàn diện, học tập suốt đời, có đạo đức, mang lại những ảnh hưởng tích cực truyền cảm hứng cho xã hội.</h6>
-    <h6 style="overflow: visible;">• Chuyển đổi thành công Trường Đại học Văn Lang thành Đại học Văn Lang.</h6>
-    <h6 style="overflow: visible;">• Trở thành một tổ chức lấy con người làm trọng tâm, coi trọng nhân tài, có văn hóa vững mạnh; xây dựng đội ngũ đủ phấm chất và năng lực để thể hiện được tầm nhìn sứ mệnh của Trường; đảm bảo nâng cao đời sống vật chất tinh thần cho cán bộ – giảng viên – nhân viên.</h6>
-    <h6 style="overflow: visible;">• Cung cấp hệ thống chương trình đào tạo đa dạng, chú trọng năng lực ngoại ngữ và công nghệ, đảm bảo thích ứng được với sự thay đổi của thị trường và xã hội.</h6>
-    <h6 style="overflow: visible;">• Thành lập và đưa vào hoạt động Trung tâm Đổi mới sáng tạo Văn Lang là đơn vị tiên phong đưa ra các giải pháp đột phá giải quyết các vấn đề của quốc gia và khu vực, mang lại những thay đổi tích cực cho Trường Đại học Văn Lang và cho cộng đồng.</h6>
-    <h6 style="overflow: visible;">• Đẩy mạnh các chương trình hợp tác về đào tạo và nghiên cứu khoa học với các trường đại học hàng đầu trên thế giới, thu hút mạnh mẽ sinh viên quốc tế đến học tập tại Văn Lang.</h6>
-    <h6 style="overflow: visible;">• Xây dựng cơ cấu tổ chức tinh gọn, theo định hướng quốc tế hóa, đảm bảo vận hành hiệu quả trên nền tảng ứng dụng công nghệ. Hoàn thiện xây dựng và vận hành hệ thống cơ sở vật chất ở cả ba miền Bắc, Trung, Nam.</h6>
-    <h6 style="overflow: visible;">• Phát triển hệ sinh thái số Văn Lang là nơi hội tụ, kết nối các cá nhân, tổ chức và cộng đồng để chia sẻ và đóng góp cho sự nghiệp đào tạo nguồn nhân lực và phục vụ xã hội.</h6>
-    <h6 style="overflow: visible;">• Phát triển Qũy Giáo dục Văn Lang đi đầu trong các công tác xã hội trong cộng đồng Văn Lang và tại Việt Nam.</h6>
-    <h6 style="overflow: visible;"> (Theo Quyết định số 110/QĐ/VL-HĐT ngày 18/08/2020 của Chủ tịch Hội đồng trường v/v <strong> Ban hành Mục tiêu chiến lược của Trường Đại học Văn Lang giai đoạn 2020-2025, tầm nhìn đến 2030).</strong> </h6><br>
-</div>
-<br><br><br><br>
