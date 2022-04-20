@@ -1,0 +1,138 @@
+<div class="header-background">
+	<h1 class="header-tilte">TRANG CHỦ - LIÊN HỆ</h1>
+</div>
+<div class="row">
+	<div class="col" style="margin-left: 6em; margin-top: 3em; margin-bottom: 2.5em;">
+		<div class="row">
+			<h3><strong> Địa chỉ liên hệ</strong></h3>
+			<div class="card shadow bg-body rounded">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-2">
+							<img class="card-image" src="../../assets/contact/vAnlang.png" alt="">
+						</div>
+						<div class="col"><strong>ĐỊA CHỈ:</strong> <br />
+							Phòng 2.02, tòa nhà LV, 69/68 Đặng Thùy Trâm, <br />
+							P. 13, Q. Bình Thạnh, Tp. HCM</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-2">
+							<img src="../../assets/contact/email.jpg" class="card-image" alt="">
+						</div>
+						<div class="col">
+							<strong>EMAIL:</strong> <br />
+							qhdn@vlu.edu.vn
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-2">
+							<img src="../../assets/contact/phone hearing.jpg" class="card-image" alt="">
+						</div>
+						<div class="col">
+							<strong>
+								PHONE:
+							</strong> <br />
+							028. 7109 9236
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="backgroup-cv">
+				<button class="btn btn-primary mt-3" [routerLink]="['resume-template']" style="position: relative; top: 3em;left: 3em;width: 200px;font-weight: bold;background: rgba(199,
+					0, 0, 0.9); border: 1px; height: 3em;">TẠO
+					RESUME</button>
+			</div>
+		</div>
+	</div>
+	<div class="col" style="margin-left: 6em; margin-top: 5.5em; margin-bottom: 2.5em;">
+		<div class="card shadow bg-body rounded" style="background-color: #D5C0C0; margin-right: 3em;">
+			<div class="card-body">
+				<h3><strong>Liên hệ chúng tôi</strong></h3>
+				<form #form="ngForm" (ngSubmit)="onSubmit()">
+					<input name="name" [(ngModel)]="this.model.contact.name" class="form-control mt-3" type="text"
+						placeholder="Tên của bạn">
+					<input name="numberPhone" [(ngModel)]="this.model.contact.numberPhone" class="form-control mt-3"
+						type="text" placeholder="Số điện thoại liên lạc">
+					<input name="mail" [(ngModel)]="this.model.contact.mail" class="form-control mt-3" type="email"
+						placeholder="Địa chỉ email">
+					<textarea name="text" [(ngModel)]="this.model.contact.text" class="form-control mt-3"
+						placeholder="Lời nhắn"></textarea>
+					<button class="btn btn-primary mt-3"
+						style="width: 100%;font-weight: bold;background: rgba(199, 0, 0, 0.9); border: 1px; height: 3em;"
+						type="submit">Gửi</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row justify-content-center" style="margin-top: 3em; margin-bottom: 6em;">
+	<iframe class="shadow bg-body rounded"
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.787918995638!2d106.69774151534763!3d10.827535761207649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528f4a62fce9b%3A0xc99902aa1e26ef02!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBWxINuIExhbmcgLSBDxqEgc-G7nyAz!5e0!3m2!1svi!2s!4v1650062902058!5m2!1svi!2s"
+		width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+<div class="d-flex footer-content">
+	<div style="position: relative;height:832px; width:100%; background:
+		linear-gradient(180deg, #70DA6E 0%, rgba(212, 245, 6, 0.2) 100%);">
+		<h2 class="_center_" style="overflow: visible; position: relative; top:120px"><strong
+				style="overflow: visible;">
+				Cơ Hội Du Học Cho Sinh Viên Văn Lang
+			</strong></h2>
+		<div style="position: relative; display: flex; flex-direction: row; width:
+			100%; height: 450px; top:160px;background: #0000;">
+			<div style="position: relative; width: 33.3%;background-color: #0000;">
+				<div class="_center_" style="position: relative; background: #FFF; border-radius: 20px; height:
+					100%; width: 80%;">
+					<img src="../../assets/Image/hn.png" alt="" style="max-width:90%; max-height:195px; margin-top: 25px;
+						border-radius: 20px;">
+					<p style="position: absolute; top: 230px; left: 20px; font-size: 12px;">22-02-2021</p>
+					<strong class="_text_max_height" style="position: absolute; top:255px;">
+						Đại học Văn Lang và Liverpool John Moores liên kết đào tạo ngành cử nhân
+					</strong>
+					<div style="position: absolute;top:325px;">
+						<a href="">
+							<button class="more-button">Xem Thêm</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div style="position: relative; width: 33.4%;background-color: #0000;">
+				<div class="_center_" style="position: relative; background: #FFF; border-radius: 20px; height:
+					100%; width: 80%;">
+					<img src="../../assets/Image/lt.png" alt="" style="max-width:90%; max-height:195px; margin-top: 25px; border-radius:
+						20px;">
+					<p style="position: absolute; top: 230px; left: 20px; font-size: 12px;">22-02-2021</p>
+					<strong class="_text_max_height" style="position: absolute; top:255px;">
+						Chương trình Hợp Nhất Cử nhân - Thạc sĩ Viện Công nghệ Châu Á (AIT) cho...
+					</strong>
+					<div style="position: absolute;top:325px;">
+						<a href="">
+							<button class="more-button">Xem Thêm</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div style="position: relative; width: 33.3%;background-color: #0000;">
+				<div class="_center_" style="position: relative; background: #FFF; border-radius: 20px; height:
+					100%; width: 80%;">
+					<img src="../../assets/Image/cn.png" alt="" style="max-width:90%; max-height:195px; margin-top: 25px;
+						border-radius: 20px;">
+					<p style="position: absolute; top: 230px; left: 20px; font-size: 12px;">22-02-2021</p>
+					<strong class="_text_max_height" style="position: absolute; top:255px;">
+						Chương trình liên kết 2+2 với Đại học Victoria (Úc) ngành QUẢN TRỊ KINH...
+					</strong>
+					<div style="position: absolute;top:325px;">
+						<a href="">
+							<button class="more-button">Xem Thêm</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>
