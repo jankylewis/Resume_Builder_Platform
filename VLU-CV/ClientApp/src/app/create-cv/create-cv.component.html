@@ -20,7 +20,7 @@
 				</label>
 				<div class="profile">
 					<input type="text" class="name" name="fullName" placeholder="Họ và tên" #fullName="ngModel"
-						[(ngModel)]="service.formData.fullName ">
+						required [(ngModel)]="service.formData.fullName ">
 					<input type="text" class="position" name="position" placeholder="[Vị trí ứng tuyển]"
 						[(ngModel)]="service.formData.position ">
 					<textarea class="personal" rows="5" placeholder="Nhập personal statement bạn muốn"

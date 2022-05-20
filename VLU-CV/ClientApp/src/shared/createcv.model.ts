@@ -24,5 +24,18 @@ export class CreateCv {
 	public achievement: string;
 	public imageSrc: string = '';
 	public userId: string;
+	public createdAt: Date;
 
+}
+export class Dashboard {
+	public id: number;
+	public count: number = 0;
+	//public month: string;
+  public day: string;
+}
+export class ErrorList {
+	[x: string]: any;
+	public message: string;
+	public status: number;
+	public field: string;
 }

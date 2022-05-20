@@ -55,3 +55,13 @@ p {
 .item-shadow{
   box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.35);
 }
+
+.col-3 {
+  margin-top: 40px;
+}
+
+.pagination {
+  justify-content: center;
+  align-items: center;
+}
+

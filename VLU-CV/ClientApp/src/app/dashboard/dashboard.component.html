@@ -1,0 +1,34 @@
+<div class="row margin-card" style="--magrin-top: 4em; --magrin-bottom: 3em ; --margin-left: 3em;">
+	<div class="col">
+		<div class="card width-card" style="--card-width: 400px; --card-height: 400xp">
+			<div class="card-body">
+				<div class="card-title">
+					<h4 style="overflow: hidden;height: 32px;">Tổng số lượng resume đã tạo:
+						<strong>{{count}}</strong>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card width-card" style="--card-width: 400px; --card-height: 400xp">
+			<div class="card-body">
+				<div class="card-title">
+					<h4 style="overflow: hidden;height: 32px;">Resume được tạo trong ngày:
+						<strong>{{countofmonth}}</strong>
+					</h4>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row margin-card width-card justify-content-center"
+	style="--margin-left: 3em; --card-width: 100%; --card-height: 100%; --magrin-bottom: 5em">
+	<div id="chart">
+		<apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+			[plotOptions]="chartOptions.plotOptions" [xaxis]="chartOptions.xaxis"></apx-chart>
+	</div>
+</div>
+<app-footer></app-footer>

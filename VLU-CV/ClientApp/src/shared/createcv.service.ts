@@ -1,9 +1,10 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CreateCv } from './createcv.model';
+import { CreateCv, Dashboard } from './createcv.model';
 import { SocialAuthService, SocialUser } from 'angularx-social-login';
 import { Observable } from 'rxjs';
+import { NgForm } from '@angular/forms';
 
 @Injectable()
 
@@ -20,8 +21,9 @@ export class CreateCvService {
 	list: CreateCv[];
 	data: CreateCv;
 
-	postCV() {
-		return this.http.post(this._baseUrl + "/createcv", this.formData);
+
+	postCV(data: CreateCv) {
+		return this.http.post(this._baseUrl + "/createcv", data);
 	}
 	getCV(): Observable<CreateCv[]> {
 		return this.http.get<CreateCv[]>(this._baseUrl + '/getcv?userId=' + this.user.id);
@@ -34,8 +36,23 @@ export class CreateCvService {
 			.toPromise()
 			.then(res => this.list = res as CreateCv[]);
 	}
-	editCV(form: any) {
-		return this.http.put(this._baseUrl + '/' + form.id, form);
+	editCV(data: CreateCv) {
+		console.log(data);
+		return this.http.put(this._baseUrl + '/editcv' + data.id, data);
 	}
-
+	deleteCV(id: number) {
+		return this.http.delete(this._baseUrl + '/deletecv' + id);
+	}
+	getdashboard(): Observable<Dashboard> {
+		return this.http.get<Dashboard>(this._baseUrl + '/getcount');
+	}
+	getalldashboard(): Observable<Dashboard[]> {
+		return this.http.get<Dashboard[]>(this._baseUrl + '/getcount');
+	}
+	getcount(): Observable<number> {
+		return this.http.get<number>(this._baseUrl + '/getcountcv');
+	}
+	getcountofmonth(): Observable<number> {
+		return this.http.get<number>(this._baseUrl + '/getcountofmonth');
+	}
 }

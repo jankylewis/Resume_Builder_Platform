@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\VLU-CV",
+    "\\VLU-CV\\ClientApp",
+    "\\VLU-CV\\ClientApp\\src",
+    "\\VLU-CV\\ClientApp\\src\\app",
+    "\\VLU-CV\\ClientApp\\src\\app\\dashboard",
+    "\\VLU-CV\\ClientApp\\src\\shared",
+    "\\VLU-CV\\VLU-CV",
+    "\\VLU-CV\\VLU-CV\\Controllers",
+    "\\VLU-CV\\VLU-CV\\Models"
+  ],
+  "SelectedNode": "\\VLU-CV\\VLU-CV\\Models\\CurriculumVitae.cs",
+  "PreviewInSolutionExplorer": false
+}

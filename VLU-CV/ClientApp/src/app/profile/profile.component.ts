@@ -14,13 +14,28 @@ export class ProfileComponent implements OnInit {
 	constructor(public service: CreateCvService, public router: Router) { };
 	data: CreateCv[];
 	cvdata: CreateCv;
+  page: number = 1;
+  isData = false;
 	closeResult = '';
 	ngOnInit(): void {
-		this.service.getCV().subscribe(data => {
-			this.data = data;
-			console.log(this.data);
-		})
-	}
+    this.service.getCV().subscribe(data => {
+      this.data = data;
+      if (this.data.length > 0 && this.data != null) {
+        this.isData = true;
+      }
+      /*console.log(this.data);*/
+    });
+  }
+
+  getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
 	download() {
 		htmlToImage.toPng(document.getElementById('cv'))
 			.then(function (dataUrl) {
@@ -35,6 +50,6 @@ export class ProfileComponent implements OnInit {
 
 	open(id: number) {
 		this.router.navigate(['/profile/resumeview/' + id]);
-	}
+  }  
 }
 
