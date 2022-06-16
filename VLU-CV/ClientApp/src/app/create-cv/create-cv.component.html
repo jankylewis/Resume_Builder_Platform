@@ -19,11 +19,11 @@
 						style="position: relative; top: 48px; left: 50px;width: 8em;height: 10em;">
 				</label>
 				<div class="profile">
-					<input type="text" class="name" name="fullName" placeholder="Họ và tên" #fullName="ngModel"
+					<input (click)="showSuggestFullname()" type="text" class="name" name="fullName" placeholder="Họ và tên" #fullName="ngModel"
 						required [(ngModel)]="service.formData.fullName ">
-					<input type="text" class="position" name="position" placeholder="[Vị trí ứng tuyển]"
+					<input (click)="showSuggestPosition()" type="text" class="position" name="position" placeholder="[Vị trí ứng tuyển]"
 						[(ngModel)]="service.formData.position ">
-					<textarea class="personal" rows="5" placeholder="Nhập personal statement bạn muốn"
+					<textarea (click) ="showSuggestPersonalStatement()" class="personal" rows="5" placeholder="Nhập personal statement bạn muốn"
 						[(ngModel)]="service.formData.personalStatement"></textarea>
 				</div>
 			</div>
@@ -36,30 +36,30 @@
 					<div class="simple__information" style="top: 40px;">
 						<div class="information">
 							<div class="icon birthday"></div>
-							<input type="datetime" name="birthDay" class="birth-day" placeholder="Ngày sinh"
+							<input (click)="showSuggestContactInfo()" type="datetime" name="birthDay" class="birth-day" placeholder="Ngày sinh"
 								onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"
 								[(ngModel)]="service.formData.birthDay ">
 						</div>
 						<div class="information">
 							<div class="icon mail"></div>
-							<input class="mail-style" name="email" placeholder="Email" type="email"
+							<input (click)="showSuggestContactInfo()" class="mail-style" name="email" placeholder="Email" type="email"
 								[(ngModel)]="service.formData.email ">
 						</div>
 						<div class="information">
 							<div class="icon phone"></div>
-							<input class="tel-style" name="phoneNumber" placeholder="Số điện thoại" type="text"
+							<input (click)="showSuggestContactInfo()" class="tel-style" name="phoneNumber" placeholder="Số điện thoại" type="text"
 								[(ngModel)]="service.formData.phoneNumber ">
 
 						</div>
 						<div class="information">
 							<div class="icon facebook"></div>
-							<input class="facebook-style" name="facebookUrl" placeholder="Link facebook" type="text"
+							<input (click)="showSuggestContactInfo()" class="facebook-style" name="facebookUrl" placeholder="Link facebook" type="text"
 								[(ngModel)]="service.formData.facebookUrl ">
 
 						</div>
 						<div class="information">
-							<div class="icon location"></div>
-							<input class="location-style" name="address" placeholder="Địa chỉ" type="text"
+							<div class="icon location"></div>		
+							<input (click)="showSuggestContactInfo()" class="location-style" name="address" placeholder="Địa chỉ" type="text"
 								[(ngModel)]="service.formData.address ">
 						</div>
 					</div>
@@ -68,14 +68,14 @@
 						<div class="title__footer"></div>
 					</div>
 					<div class="simple__information">
-						<input class="skill-style skill-input" name="skill_1" placeholder="Nhập kĩ năng" type="text"
+						<input (click)="showSuggestSkill()" class="skill-style skill-input" name="skill_1" placeholder="Nhập kĩ năng" type="text"
 							[(ngModel)]="service.formData.skill_1 ">
-						<textarea class="p__content skill-style skill-text" name="skillDecription_1"
+						<textarea (click)="showSuggestSkill()" class="p__content skill-style skill-text" name="skillDecription_1"
 							placeholder="Nhập mô tả kĩ năng"
 							[(ngModel)]="service.formData.skillDecription_1"></textarea>
-						<input class="skill-style skill-input" placeholder="Nhập kĩ năng" name="skill_2" type="text"
+						<input (click)="showSuggestSkill()" class="skill-style skill-input" placeholder="Nhập kĩ năng" name="skill_2" type="text"
 							#skill_2="ngModel" [(ngModel)]="service.formData.skill_2 ">
-						<textarea class="p__content skill-style skill-text" name="skillDecription_2"
+						<textarea (click)="showSuggestSkill()" class="p__content skill-style skill-text" name="skillDecription_2"
 							placeholder="Nhập mô tả kĩ năng"
 							[(ngModel)]="service.formData.skillDecription_2"></textarea>
 
@@ -85,7 +85,7 @@
 						<div class="title__footer"></div>
 					</div>
 					<div class="simple__information">
-						<textarea class="p__content" name="achievement"
+						<textarea (click)="showSuggestAchievement()" class="p__content" name="achievement"
 							style="width: 180px; top: 7em; position: relative; height: 7em;"
 							placeholder="Nhập thành tích" [(ngModel)]="service.formData.achievement"></textarea>
 
@@ -97,12 +97,12 @@
 						<div class="title__footer"></div>
 					</div>
 					<div class="simple__information" style="width:300px; margin-top: 3px;">
-						<input name="specialized" style="top: 44px; position: relative;" class="right-input"
+						<input (click)="showSuggestEducation()" name="specialized" style="top: 44px; position: relative;" class="right-input"
 							placeholder="Nhập chuyên ngành" type="text" [(ngModel)]="service.formData.specialized">
 
-						<input name="schoolName" style="top: 44px; position: relative;" class="right-input"
+						<input (click)="showSuggestEducation()" name="schoolName" style="top: 44px; position: relative;" class="right-input"
 							placeholder="Nhập trường đại học" type="text" [(ngModel)]="service.formData.schoolName">
-						<input name="gpa" style="top: 44px; position: relative;" class="right-input" step=0.01 max="10"
+						<input (click)="showSuggestEducation()" name="gpa" style="top: 44px; position: relative;" class="right-input" step=0.01 max="10"
 							min="0" placeholder="Kết quả học tập thang điểm 10" type="number"
 							[(ngModel)]="service.formData.gpa">
 					</div>
@@ -111,20 +111,20 @@
 						<div class="title__footer"></div>
 					</div>
 					<div class="simple__information" style="width:255px;top:-33px">
-						<input name="positioned_1" class="job-input" placeholder="Vị trí làm việc" type="text"
+						<input (click)="showSuggestWorkExp()" name="positioned_1" class="job-input" placeholder="Vị trí làm việc" type="text"
 							[(ngModel)]="service.formData.positioned_1">
-						<input class="job-input" name="worked_1" placeholder="Nơi làm việc" type="text"
+						<input (click)="showSuggestWorkExp()" class="job-input" name="worked_1" placeholder="Nơi làm việc" type="text"
 							[(ngModel)]="service.formData.worked_1">
-						<textarea class="p__content job-input" name="description_1" placeholder="Mô tả công viêc..."
+						<textarea (click)="showSuggestWorkExp()" class="p__content job-input" name="description_1" placeholder="Mô tả công viêc..."
 							[(ngModel)]="service.formData.description_1"></textarea>
 
 					</div>
 					<div class="simple__information" style="width:255px;top:-33px">
-						<input class="job-input" name="positioned_2" placeholder="Vị trí làm việc" type="text"
+						<input (click)="showSuggestWorkExp()" class="job-input" name="positioned_2" placeholder="Vị trí làm việc" type="text"
 							[(ngModel)]="service.formData.positioned_2">
-						<input class="job-input" name="worked_2" placeholder="Nơi làm việc" type="text"
+						<input (click)="showSuggestWorkExp()" class="job-input" name="worked_2" placeholder="Nơi làm việc" type="text"
 							[(ngModel)]="service.formData.worked_2">
-						<textarea class="p__content job-input" name="description_2" style="padding-top: 0;" type="text"
+						<textarea (click)="showSuggestWorkExp()" class="p__content job-input" name="description_2" style="padding-top: 0;" type="text"
 							placeholder="Mô tả công viêc..." [(ngModel)]="service.formData.description_2"></textarea>
 					</div>
 				</div>
@@ -135,3 +135,44 @@
 		</div>
 	</div>
 </form>
+<div id="cv-tips-right">
+	<!--<div class="tips-sidebar">
+
+		<div class="tips__close">
+			<img class="icon__close" src="../../assets/Image/icon_close.png"/>
+		</div>
+
+		<div class="tips__item">
+			<img class="icon__item" src="../../assets/Image/suggest.png" />
+			<div class="label__item">
+				GỢI Ý
+			</div>
+		</div>
+		<div class="names-input__item">
+			Họ và Tên
+		</div>
+		<div class="content__item">
+			Cần Nhập Họ và tên đầy đủ theo chứng minh thư
+			Nếu là CV tiếng Việt thì bạn Nhập có dấu,
+			nếu là CV tiếng Anh thì bạn Nhập không dấu
+		</div>
+	</div>-->
+</div>
+<div id="cv-tips-left">
+	<!--<div class="tips-sidebar">
+		<div class="tips__item">
+			<img class="icon__item" src="../../assets/Image/suggest.png" />
+			<div class="label__item">
+				GỢI Ý
+			</div>
+		</div>
+		<div class="names-input__item">
+			Họ và Tên
+		</div>
+		<div class="content__item">
+			Cần Nhập Họ và tên đầy đủ theo chứng minh thư
+			Nếu là CV tiếng Việt thì bạn Nhập có dấu,
+			nếu là CV tiếng Anh thì bạn Nhập không dấu
+		</div>
+	</div>-->
+</div>

@@ -30,7 +30,7 @@ export class ResumeTemplateComponent implements OnInit {
       name: "Lư Diễm Du",
       position: 'Line Manager',
       img: '../../assets/Image/LDD.png',
-      link: 'resume-template-nvt'
+      link: 'resume-template-hhm'
     },
     {
       name: "Hồng Tú Mỹ",

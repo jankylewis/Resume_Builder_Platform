@@ -65,18 +65,17 @@
 }
 
 .header-background {
-	background: url("../../assets/contact/banner.png") no-repeat;
-	background-size: cover;
-	width: 100%;
-	margin-top: -9em;
-	height: 50vh;
+  background: url("../../assets/contact/banner.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
 }
 
 .header-tilte {
 	color: #fff;
 	background-color: #0000 !important;
 	position: relative;
-	top: 8em;
+	top: 7em;
 	overflow: hidden;
 	text-align: center;
 }
@@ -91,4 +90,13 @@
 	height: 10em;
 	width: 19em;
 	margin-left: 3em;
+}
+
+.contact-item {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-item:hover {
+  color: #ffe600;
 }

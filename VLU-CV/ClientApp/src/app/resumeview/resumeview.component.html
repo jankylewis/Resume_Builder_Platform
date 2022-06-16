@@ -2,10 +2,9 @@
 	<div class="row">
 		<div class="col">
 			<div id="cv" class="cv">
-				<div
-					style="height: 220px; width: 580px; position: relative; border:15px solid #843D3D; border-bottom: 0;">
+				<div style="height: 220px; width: 580px; position: relative; border:15px solid #843D3D; border-bottom: 0;">
 					<img [src]="cvdata.imageSrc" alt=""
-						style="position: absolute; left:31px; top:27px;width: 150px;max-height: 200px;">
+							 style="position: absolute; left:31px; top:27px;width: 150px;max-height: 200px;">
 					<p style="position: absolute; width: 300px; height: 11px; left: 232px; top: 51px;
                       font-style: normal; font-weight: bold; font-size:22px; line-height: 30px;">
 						{{cvdata.fullName}}
@@ -59,13 +58,15 @@
 							<div class="information bg-none">
 								<div class="icon mail"></div>
 								<p class="bg-none"
-									style="margin-top:1px;line-break: anywhere; background-color: #0000;">
-									{{cvdata.email}}</p>
+									 style="margin-top:1px;line-break: anywhere; background-color: #0000;">
+									{{cvdata.email}}
+								</p>
 							</div>
 							<div class="information bg-none">
 								<div class="icon phone"></div>
 								<p class="bg-none" style="margin-top:1px;background-color: #0000;">
-									{{cvdata.phoneNumber}}</p>
+									{{cvdata.phoneNumber}}
+								</p>
 							</div>
 							<div class="information bg-none">
 								<div class="icon birthday"></div>
@@ -74,12 +75,14 @@
 							<div class="information bg-none">
 								<div class="icon location" style="width: 26px; margin-right: 16px;"></div>
 								<p class="bg-none" style="margin-top:1px;line-break: anywhere;background-color: #0000;">
-									{{cvdata.address}}</p>
+									{{cvdata.address}}
+								</p>
 							</div>
 							<div class="information bg-none">
 								<div class="icon facebook" style="margin-left: 3px;"></div>
 								<p class="bg-none" style="margin-top:1px;line-break: anywhere;background-color: #0000;">
-									{{cvdata.facebookUrl}}</p>
+									{{cvdata.facebookUrl}}
+								</p>
 							</div>
 						</div>
 						<strong class="title bg-none">Các kỹ năng</strong><br>
@@ -112,6 +115,9 @@
 			</div>
 			<div class="row mt-5">
 				<button (click)="deletecv()">Delete</button>
+			</div>
+			<div class="row mt-5">
+				<a [routerLink]="['/profile']" style="margin: 20px 40px 0 0 auto;"><button>Quay lại</button></a>
 			</div>
 		</div>
 	</div>

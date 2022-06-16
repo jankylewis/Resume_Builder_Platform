@@ -102,3 +102,7 @@ a:hover {
 	width: 170px;
 	height: 80px;
 }
+.user-text {
+  cursor: pointer;
+}
+

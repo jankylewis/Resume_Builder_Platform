@@ -120,14 +120,14 @@ namespace VLU_CV.Controllers
             }
             else
             {
-                if (GetCountCVToday(curriculum.UserId) <= 6)
+                if (GetCountCVToday(curriculum.UserId) <= 4)
                 {
                     curriculum.CreatedAt = DateTime.Now.Date;
                     _context.CurriculumVitaes.Add(curriculum);
                     _context.SaveChanges();
                     return Ok(new { StatusCode = 200, });
                 }
-                else if (GetCountCVToday(curriculum.UserId) > 6)
+                else if (GetCountCVToday(curriculum.UserId) > 4)
                 {
                     return BadRequest(new { StatusCode = 423 });
                 }

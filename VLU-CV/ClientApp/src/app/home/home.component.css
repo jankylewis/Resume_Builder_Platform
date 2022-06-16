@@ -14,6 +14,10 @@ html {
   width: 100%;
 }
 
+.background-img {
+    background-size: 100%;
+}
+
 .full-width {
   width: 100%;
 }

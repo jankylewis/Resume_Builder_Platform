@@ -5,12 +5,12 @@
     "\\VLU-CV\\ClientApp",
     "\\VLU-CV\\ClientApp\\src",
     "\\VLU-CV\\ClientApp\\src\\app",
+    "\\VLU-CV\\ClientApp\\src\\app\\create-cv",
     "\\VLU-CV\\ClientApp\\src\\app\\dashboard",
     "\\VLU-CV\\ClientApp\\src\\shared",
     "\\VLU-CV\\VLU-CV",
-    "\\VLU-CV\\VLU-CV\\Controllers",
-    "\\VLU-CV\\VLU-CV\\Models"
+    "\\VLU-CV\\VLU-CV\\Properties"
   ],
-  "SelectedNode": "\\VLU-CV\\VLU-CV\\Models\\CurriculumVitae.cs",
+  "SelectedNode": "\\VLU-CV\\ClientApp\\src\\app\\dashboard\\dashboard.component.ts",
   "PreviewInSolutionExplorer": false
 }
